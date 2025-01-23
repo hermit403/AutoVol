@@ -1,0 +1,3 @@
+name = "CTF常见hint扫描"
+[settings]
+tasks = ["windows.filescan | findstr hint","windows.filescan | findstr h1nt"]

@@ -1,0 +1,3 @@
+name = "获取Vol3帮助"
+[settings]
+tasks = ["-h"]

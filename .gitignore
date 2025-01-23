@@ -1,0 +1,6 @@
+/env
+/outputs
+/workplace
+*.py
+*.ui
+*.raw
