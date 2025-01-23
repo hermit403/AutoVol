@@ -1,4 +1,5 @@
 ## AutoVol3 - A GUI Memory Forensics Tool Based on Volatility3
+![](/icon.png)
 ----
 ### Quick Start
 1. Configure your Python virtual environment
