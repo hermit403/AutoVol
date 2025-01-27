@@ -1,3 +1,14 @@
 name = "CTF常见flag扫描"
+author = "AutoVol3"
+version = "1.0"
+# This is a simple example of a AutoVol3 task
 [settings]
+parent = "base"
 tasks = ["windows.filescan | findstr flag","windows.filescan | findstr f14g"]
+findstr = ["flag","f14g","FLAG"]
+regex = ["^\\w+([-+.\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$","^(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\\d{8}$"]
+dumpfiles = true
+[output]
+console = true
+filter = ["User"]
+regex = []

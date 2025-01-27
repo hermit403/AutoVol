@@ -1,6 +1,11 @@
 /env
+/main.build
+/main.dist
+/main.onefile-build
 /outputs
 /workplace
 *.py
 *.ui
 *.raw
+*.cmd
+*.xml
