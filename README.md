@@ -1,6 +1,6 @@
 ## AutoVol3 - A GUI Memory Forensics Tool Based on Volatility3
 
-![](https://raw.githubusercontent.com/hermit403/AutoVol3/refs/heads/master/icon.png)
+![](https://raw.githubusercontent.com/hermit403/AutoVol3/refs/heads/master/icon.png =200x200)
 
 ### Quick Start
 
