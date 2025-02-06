@@ -1,14 +1,23 @@
-name = "CTF常见flag扫描"
+name = "简单flag扫描"
+# The name of this task
 author = "AutoVol3"
-version = "1.0"
-# This is a simple example of a AutoVol3 task
+# Author name
+arch = "windows"
+# The arch of target, e.g. windows | mac | linux
 [settings]
-parent = "base"
-tasks = ["windows.filescan | findstr flag","windows.filescan | findstr f14g"]
-findstr = ["flag","f14g","FLAG"]
-regex = ["^\\w+([-+.\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$","^(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\\d{8}$"]
-dumpfiles = true
+# Main Settings
+parent = ["parent-task1", "parent-task2"]
+# The parent task, your task will execute these parent tasks before this task
+tasks = ["windows.info"]
+# Volatility3 commands
+findstr = ["123456", "abcdef", "ABCDEF"]
+# Find target strings in output and parent tasks' output, AutoVol3 will try to find these strings and save them in the end of output file
+regex = [
+    "^\\w+([-+.\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$"
+]
+# Find target strings in output and parent tasks' output, same as above, but use regex
+dumpfiles = false
+# If you set "true", AutoVol3 will try to dump matched files after this task
 [output]
-console = true
-filter = ["User"]
-regex = []
+console = false
+# Output full content to the console

@@ -1,3 +1,4 @@
 name = "filescan"
+author = "AutoVol3"
 [settings]
 tasks = ["windows.filescan"]
